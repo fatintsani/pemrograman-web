@@ -1,0 +1,35 @@
+/* #header {
+    height: 100px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 100px; 
+} */
+
+#header {
+    background-color: blue;
+}
+
+#content {
+    height: 400px;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+#footer {
+    height: 50px;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    line-height: 50px; 
+}
+
+.merah {
+color: red;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
