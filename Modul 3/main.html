@@ -1,0 +1,24 @@
+<form onsubmit="return validateForm()">
+  <label>Nama:</label>
+  <input type="text" id="nama"><br><br>
+  
+  <label>Email:</label>
+  <input type="email" id="email"><br><br>
+  
+  <input type="submit" value="Kirim">
+</form>
+
+<script>
+function validateForm() {
+  let nama = document.getElementById("nama").value;
+  let email = document.getElementById("email").value;
+
+  if (nama == "" || email == "") {
+    alert("Nama dan email harus diisi!");
+    return false; 
+  }
+
+  alert("Form berhasil dikirim!");
+  return true;
+}
+</script>
