@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Validasi Form</title>
+</head>
+
+<body>
+    <h2>Form Validasi</h2>
+    <form onsubmit="return validasiForm()">
+        Nama: <input type="text" id="nama"><br><br>
+        Email: <input type="text" id="email"><br><br>
+        <input type="submit" value="Kirim">
+    </form>
+
+    <script>
+        function validasiForm() {
+            let nama = document.getElementById("nama").value;
+            let email = document.getElementById("email").value;
+
+            if (nama === "" || email === "") {
+                alert("Semua kolom harus diisi!");
+                return false; 
+            }
+            alert("Form berhasil dikirim!");
+            return true;
+        }
+    </script>
+</body>
+
+</html>
