@@ -1,0 +1,24 @@
+<form onsubmit="return validateForm()"></form>
+
+<script>
+    function validateForm() {
+    let nama = document.getElementById("nama").value;
+    if (nama === "") {
+        alert("Nama belum diisi!");
+        return false;
+    }
+    return true;
+}
+</script>
+
+<input type="email" id="email" onblur="cekEmail()">
+
+<script>
+    function cekEmail() {
+        let email = document.getElementById("email").value;
+        let pola = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!pola.test(email)) {
+            alert("Email tidak valid!");
+        }
+    }
+</script>
