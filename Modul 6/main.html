@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi JavaScript</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Form Pendaftaran</h2>
+        <form id="userForm" onsubmit="return validateForm()">
+            <label>Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" onfocus="highlight(this)" onblur="validateNama()">
+            <span id="namaError" class="error"></span>
+
+            <label>Email:</label>
+            <input type="email" id="email" name="email" onfocus="highlight(this)" onblur="validateEmail()">
+            <span id="emailError" class="error"></span>
+
+            <label>Usia:</label>
+            <input type="number" id="usia" name="usia" onfocus="highlight(this)" onblur="validateUsia()">
+            <span id="usiaError" class="error"></span>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
