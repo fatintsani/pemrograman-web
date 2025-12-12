@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,3 +31,37 @@ document.getElementById("formDiri").addEventListener("submit", function(e){
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Data Diri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Form Data Diri</h2>
+    <form id="formDiri">
+        <input type="text" id="nama" placeholder="Nama Lengkap" required>
+        <input type="text" id="alamat" placeholder="Alamat" required>
+        <input type="text" id="nohp" placeholder="No HP" required>
+        <button type="submit">Lanjut ke Buku Tamu</button>
+    </form>
+</div>
+
+<script>
+document.getElementById("formDiri").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    localStorage.setItem("nama", document.getElementById("nama").value);
+    localStorage.setItem("alamat", document.getElementById("alamat").value);
+    localStorage.setItem("nohp", document.getElementById("nohp").value);
+
+    window.location.href = "buku_tamu.html";
+});
+</script>
+
+</body>
+</html>
+>>>>>>> a4447ec6a2d97d2218d98cbecfac217cc39dd6df
